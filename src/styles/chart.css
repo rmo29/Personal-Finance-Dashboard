@@ -1,0 +1,27 @@
+/* Chart Container Styling */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chart-title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+}

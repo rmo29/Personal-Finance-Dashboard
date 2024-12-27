@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  padding: 40px;
+  color: #fff;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f0a500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Styling */
+.update-form {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.update-form .form-group {
+  margin-bottom: 15px;
+}
+
+.update-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #f0a500;
+}
+
+.update-form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.update-form button {
+  padding: 10px 20px;
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.update-form button:hover {
+  background-color: #e08c00;
+}
+
+/* Card Styles */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.cards .card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.cards .card:hover {
+  transform: translateY(-10px);
+}
+
+.cards .card h3 {
+  font-size: 24px;
+  color: #f0a500;
+}
+
+.cards .card p {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Chart Container Styles */
+.chart-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.chart-container canvas {
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards .card {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .update-form input {
+    width: 250px;
+  }
+
+  .update-form button {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+}

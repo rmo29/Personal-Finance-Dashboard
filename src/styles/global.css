@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Main Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #121212;
+}
+
+/* Header Styling */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* Main Content Styling */
+.app-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Max width for larger screens */
+  margin-bottom: 20px;
+}
+
+/* Chart Container */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 400px; /* Restrict chart width */
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Chart Title */
+.chart-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Chart Styling */
+.chart {
+  width: 100%;
+  height: 300px;
+  max-width: 400px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .chart-container {
+    width: 90%; /* Full width on small screens */
+    max-width: none;
+  }
+
+  .chart {
+    height: 250px; /* Adjust chart size on smaller screens */
+  }
+
+  .app-header h1 {
+    font-size: 28px;
+  }
+}

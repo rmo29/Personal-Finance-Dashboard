@@ -1,0 +1,46 @@
+.card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #f0a500;
+}
+
+.card p {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards .card {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+
+  .dashboard-title {
+    font-size: 28px;
+  }
+
+  .chart-container {
+    width: 100%;
+    padding: 15px;
+  }
+}
